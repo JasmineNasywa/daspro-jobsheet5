@@ -7,6 +7,25 @@ public class PemilihanHari12 {
         String dayName, dayType;
 
         System.out.println("Input day name : ");
-        
+        dayName = sc.nextLine();
+
+        switch (dayName.toLowerCase()) {
+            case "monday" :
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":
+            dayType = "weekday";
+            break;
+            case "saturday":
+            case "sunday":
+            dayType = "weekend";
+            break;
+            default :
+            dayType = "Invalid data name";
+            break;
+        }
+
+        System.out.println(dayName + " is a " + dayType);
     }
 }
