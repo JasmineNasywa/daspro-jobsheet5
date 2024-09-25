@@ -8,5 +8,6 @@ public class PemilihanBilangan12 {
         int angka = sc.nextInt();
 
         String pemilihan = (angka % 2 == 0) ? "Angka " + angka + " termasuk bilangan genap" : "Angka " + angka + " termasuk bilangan ganjil";
+        System.out.println(pemilihan);
     }
 }
