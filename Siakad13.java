@@ -32,12 +32,44 @@ public class Siakad13 {
      nilaiUas = (nilaiUas * 0.35);
 
 
-     
-
      nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUts + nilaiUas);
-     System.out.println("Nama : " + nama + "NIM : " + nim);
+
+     System.out.println("Nama : " + nama + " NIM : " + nim);
      System.out.println("Kelas : " + kelas + "Absen : " + absen);
      System.out.println("Nilai Akhir : " + nilaiAkhir);
+
+     if (nilaiAkhir <= 100 && nilaiAkhir > 80) {
+        System.out.println("Nilai Akhir huruf : A");
+        System.out.println("Kualifikasi : Sangat baik");
+     }
+     else if (nilaiAkhir > 73) {
+        System.out.println("Nilai Akhir huruf : B+");
+        System.out.println("Kualifikasi : Lebih dari baik");
+     }
+     else if (nilaiAkhir > 65) {
+        System.out.println("Nilai Akhir huruf : B");
+        System.err.println("Kualifikasi : Baik");
+     }
+     else if (nilaiAkhir > 60)  {
+        System.out.println("Nilai Akhir huruf : C+");
+        System.out.println("Kualifikasi : Lebih dari cukup");
+     }
+     else if (nilaiAkhir > 50) {
+        System.out.println("Nilai huruf C");
+        System.out.println("Kualifikasi : Cukup");
+     }
+     else if (nilaiAkhir > 39) {
+        System.out.println("Nilai Akhir huruf : D");
+        System.out.println("Kualifikasi : Kurang");
+     }
+     else {
+        System.err.println("Nilai Akhir huruf : E");
+        System.out.println("Kualifikasi : gagal");
+
+     }
+
+
+     
 
     }
 }
