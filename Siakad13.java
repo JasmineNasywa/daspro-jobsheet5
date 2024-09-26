@@ -32,6 +32,7 @@ public class Siakad13 {
      nilaiUas = (nilaiUas * 0.35);
 
 
+     
 
      nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUts + nilaiUas);
      System.out.println("Nama : " + nama + "NIM : " + nim);
